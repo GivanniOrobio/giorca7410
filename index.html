@@ -145,9 +145,37 @@
                                 nuestra amplia gama de productos y servicios diseñados para satisfacer tus necesidades
                             </p>
                         </div>
-                        <div class="text-center py-16" data-testid="text-empty-state">
-                            <p class="text-muted-foreground text-lg">No hay productos o servicios disponibles en este
-                                momento.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-testid="product-1">
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Producto 1</h3>
+                                    <p class="text-muted-foreground mb-4">Descripción del producto 1.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-primary">$25.00</span>
+                                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2" data-product-id="1" data-product-name="Producto 1" data-product-price="25.00">Agregar al Carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-testid="product-2">
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Producto 2</h3>
+                                    <p class="text-muted-foreground mb-4">Descripción del producto 2.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-primary">$35.00</span>
+                                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2" data-product-id="2" data-product-name="Producto 2" data-product-price="35.00">Agregar al Carrito</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-testid="product-3">
+                                <div class="p-6">
+                                    <h3 class="text-xl font-semibold mb-2">Producto 3</h3>
+                                    <p class="text-muted-foreground mb-4">Descripción del producto 3.</p>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-2xl font-bold text-primary">$45.00</span>
+                                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2" data-product-id="3" data-product-name="Producto 3" data-product-price="45.00">Agregar al Carrito</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -485,6 +513,35 @@
             <path d="m6 6 12 12"></path>
 
             <span class="sr-only">Close</span>
+        </button>
+    </div>
+
+    <div role="dialog" id="radix-:r0:" aria-describedby="radix-:r2:" aria-labelledby="radix-:r1:" data-state="open"
+        class="fixed left-[50%] top-[50%] z-50 w-full translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg duration-200 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[48%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[48%] sm:rounded-lg max-w-md max-h-[90vh] flex flex-col"
+        data-testid="modal-cart" tabindex="-1" style="pointer-events: auto; display: none;">
+        <div class="flex flex-col space-y-1.5 text-center sm:text-left">
+            <h2 id="radix-:r1:"
+                class="text-lg font-semibold leading-none tracking-tight flex items-center justify-between"
+                data-testid="text-cart-title">Carrito de Compras<button
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 w-10"
+                    data-testid="button-close-cart">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                   </button>
+                </h2>
+        </div>
+        <div class="flex-1 overflow-y-auto">
+            <div class="text-center py-8" data-testid="text-cart-empty">
+                <p class="text-muted-foreground">Tu carrito está vacío</p>
+            </div>
+        </div>
+        <button type="button"
+            class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+                
+                <path d="M18 6 6 18"></path>
+                <path d="m6 6 12 12"></path>
+                x
+           <span class="sr-only">Close</span>
         </button>
     </div>
 
