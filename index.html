@@ -11,11 +11,7 @@
 
 <body>
     <div id="root">
-        <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none;">
-            <ol tabindex="-1"
-                class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]">
-            </ol>
-        </div>
+
         <div class="min-h-screen bg-background text-foreground">
             <header class="sticky top-0 z-50 backdrop-blur-sm bg-background/80 border-b border-border">
                 <nav class="container mx-auto px-6 py-4">
@@ -89,47 +85,339 @@
             <main>
 
                 <!-- inicio -->
-                <section id="inicio"
-                    class="relative h-[50vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary to-accent">
-                    <div class="absolute inset-0 z-10"><img
-                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1920&amp;h=1080"
-                            alt="Bienvenido a Nuestros Servicios"
-                            class="w-full h-full object-cover transition-opacity duration-1000"
-                            data-testid="img-slide-0">
-                        <div class="absolute inset-0 bg-black/40"></div>
+                <section id="productos" class="py-16 bg-background">
+
+                    <div class="container mx-auto px-6">
+                        <div class="text-center mb-12">
+                            <h3 class="text-3xl md:text-4xl font-bold text-foreground mb-4"
+                                data-testid="text-section-title">Nuestros Productos y Servicios</h3>
+                            <p class="text-lg text-muted-foreground max-w-2xl mx-auto"
+                                data-testid="text-section-description">Descubre nuestra amplia gama de productos y
+                                servicios diseñados para satisfacer tus necesidades</p>
+                        </div>
+                        <div class="mb-16">
+                            <h4 class="text-2xl font-semibold text-foreground mb-8" data-testid="text-products-title">
+                                Productos</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+                                    data-testid="card-product-9a8c11ad-5d6d-4b80-8ea8-220212aa755b">
+                                    <div class="aspect-video overflow-hidden"><img
+                                            src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400"
+                                            alt="Laptop Empresarial" class="w-full h-full object-cover"
+                                            data-testid="img-product-9a8c11ad-5d6d-4b80-8ea8-220212aa755b"></div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="text-2xl font-semibold leading-none tracking-tight"
+                                            data-testid="text-product-name-9a8c11ad-5d6d-4b80-8ea8-220212aa755b">Laptop
+                                            Empresarial</div>
+                                        <div class="text-sm text-muted-foreground"
+                                            data-testid="text-product-description-9a8c11ad-5d6d-4b80-8ea8-220212aa755b">
+                                            Laptop de alto rendimiento ideal para trabajo profesional y empresarial
+                                        </div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <div class="flex items-center justify-between"><span
+                                                class="text-2xl font-bold text-primary"
+                                                data-testid="text-product-price-9a8c11ad-5d6d-4b80-8ea8-220212aa755b">$1299.99</span><span
+                                                class="text-sm text-green-600"
+                                                data-testid="text-product-stock-9a8c11ad-5d6d-4b80-8ea8-220212aa755b">En
+                                                stock</span></div>
+                                    </div>
+                                    <div class="flex items-center p-6 pt-0"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                                            data-testid="button-add-cart-9a8c11ad-5d6d-4b80-8ea8-220212aa755b" data-product-id="11" data-product-name="producto-11" data-product-price="129">Agregar
+                                            al Carrito
+
+                                        </button></div>
+                                </div>
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+                                    data-testid="card-product-dfd6efa7-be41-48df-bb9b-5e9610a5efc0">
+                                    <div class="aspect-video overflow-hidden"><img
+                                            src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400"
+                                            alt="Monitor 4K" class="w-full h-full object-cover"
+                                            data-testid="img-product-dfd6efa7-be41-48df-bb9b-5e9610a5efc0"></div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="text-2xl font-semibold leading-none tracking-tight"
+                                            data-testid="text-product-name-dfd6efa7-be41-48df-bb9b-5e9610a5efc0">Monitor
+                                            4K</div>
+                                        <div class="text-sm text-muted-foreground"
+                                            data-testid="text-product-description-dfd6efa7-be41-48df-bb9b-5e9610a5efc0">
+                                            Monitor 4K de 27 pulgadas con colores precisos para diseño y productividad
+                                        </div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <div class="flex items-center justify-between"><span
+                                                class="text-2xl font-bold text-primary"
+                                                data-testid="text-product-price-dfd6efa7-be41-48df-bb9b-5e9610a5efc0">$389.99</span><span
+                                                class="text-sm text-green-600"
+                                                data-testid="text-product-stock-dfd6efa7-be41-48df-bb9b-5e9610a5efc0">En
+                                                stock</span></div>
+                                    </div>
+                                    <div class="flex items-center p-6 pt-0"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                                            data-testid="button-add-cart-dfd6efa7-be41-48df-bb9b-5e9610a5efc0"
+                                            data-product-id="12" data-product-name="producto-12" data-product-price="389">Agregar
+                                            al Carrito</button></div>
+                                </div>
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+                                    data-testid="card-product-b5c759df-ed10-4b20-a373-b9d64ecbe76b">
+                                    <div class="aspect-video overflow-hidden"><img
+                                            src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400"
+                                            alt="Teclado Mecánico" class="w-full h-full object-cover"
+                                            data-testid="img-product-b5c759df-ed10-4b20-a373-b9d64ecbe76b"></div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="text-2xl font-semibold leading-none tracking-tight"
+                                            data-testid="text-product-name-b5c759df-ed10-4b20-a373-b9d64ecbe76b">Teclado
+                                            Mecánico</div>
+                                        <div class="text-sm text-muted-foreground"
+                                            data-testid="text-product-description-b5c759df-ed10-4b20-a373-b9d64ecbe76b">
+                                            Teclado mecánico premium con switches Cherry MX para programadores</div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <div class="flex items-center justify-between"><span
+                                                class="text-2xl font-bold text-primary"
+                                                data-testid="text-product-price-b5c759df-ed10-4b20-a373-b9d64ecbe76b">$159.99</span><span
+                                                class="text-sm text-green-600"
+                                                data-testid="text-product-stock-b5c759df-ed10-4b20-a373-b9d64ecbe76b">En
+                                                stock</span></div>
+                                    </div>
+                                    <div class="flex items-center p-6 pt-0"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                                            data-testid="button-add-cart-b5c759df-ed10-4b20-a373-b9d64ecbe76b" data-product-id="13" data-product-name="producto-13" data-product-price="159">Agregar
+                                            al Carrito</button></div>
+                                </div>
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+                                    data-testid="card-product-9c310551-6453-4d57-b45b-279c619d0ce9">
+                                    <div class="aspect-video overflow-hidden"><img
+                                            src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400"
+                                            alt="Mouse Gaming" class="w-full h-full object-cover"
+                                            data-testid="img-product-9c310551-6453-4d57-b45b-279c619d0ce9"></div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="text-2xl font-semibold leading-none tracking-tight"
+                                            data-testid="text-product-name-9c310551-6453-4d57-b45b-279c619d0ce9">Mouse
+                                            Gaming</div>
+                                        <div class="text-sm text-muted-foreground"
+                                            data-testid="text-product-description-9c310551-6453-4d57-b45b-279c619d0ce9">
+                                            Mouse gaming de alta precisión con sensor óptico avanzado</div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <div class="flex items-center justify-between"><span
+                                                class="text-2xl font-bold text-primary"
+                                                data-testid="text-product-price-9c310551-6453-4d57-b45b-279c619d0ce9">$79.99</span><span
+                                                class="text-sm text-green-600"
+                                                data-testid="text-product-stock-9c310551-6453-4d57-b45b-279c619d0ce9">En
+                                                stock</span></div>
+                                    </div>
+                                    <div class="flex items-center p-6 pt-0"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                                            data-testid="button-add-cart-9c310551-6453-4d57-b45b-279c619d0ce9"data-product-id="14" data-product-name="producto-14" data-product-price="79">Agregar
+                                            al Carrito</button></div>
+                                </div>
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+                                    data-testid="card-product-09dfc4ea-13c9-4975-a1d3-0abdb0a6e49f">
+                                    <div class="aspect-video overflow-hidden"><img
+                                            src="https://images.unsplash.com/photo-1588512370531-0d0e2e6c3a9d?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400"
+                                            alt="Webcam HD" class="w-full h-full object-cover"
+                                            data-testid="img-product-09dfc4ea-13c9-4975-a1d3-0abdb0a6e49f"></div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="text-2xl font-semibold leading-none tracking-tight"
+                                            data-testid="text-product-name-09dfc4ea-13c9-4975-a1d3-0abdb0a6e49f">Webcam
+                                            HD</div>
+                                        <div class="text-sm text-muted-foreground"
+                                            data-testid="text-product-description-09dfc4ea-13c9-4975-a1d3-0abdb0a6e49f">
+                                            Webcam HD para videoconferencias profesionales y streaming</div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <div class="flex items-center justify-between"><span
+                                                class="text-2xl font-bold text-primary"
+                                                data-testid="text-product-price-09dfc4ea-13c9-4975-a1d3-0abdb0a6e49f">$89.99</span><span
+                                                class="text-sm text-red-600"
+                                                data-testid="text-product-stock-09dfc4ea-13c9-4975-a1d3-0abdb0a6e49f">Agotado</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center p-6 pt-0"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                                            disabled=""
+                                            data-testid="button-add-cart-09dfc4ea-13c9-4975-a1d3-0abdb0a6e49f">No
+                                            Disponible</button></div>
+                                </div>
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+                                    data-testid="card-product-a15d8f34-d3f4-47d8-932d-1b21e508cc4f">
+                                    <div class="aspect-video overflow-hidden"><img
+                                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400"
+                                            alt="Auriculares Bluetooth" class="w-full h-full object-cover"
+                                            data-testid="img-product-a15d8f34-d3f4-47d8-932d-1b21e508cc4f"></div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="text-2xl font-semibold leading-none tracking-tight"
+                                            data-testid="text-product-name-a15d8f34-d3f4-47d8-932d-1b21e508cc4f">
+                                            Auriculares Bluetooth</div>
+                                        <div class="text-sm text-muted-foreground"
+                                            data-testid="text-product-description-a15d8f34-d3f4-47d8-932d-1b21e508cc4f">
+                                            Auriculares inalámbricos con cancelación de ruido activa</div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <div class="flex items-center justify-between"><span
+                                                class="text-2xl font-bold text-primary"
+                                                data-testid="text-product-price-a15d8f34-d3f4-47d8-932d-1b21e508cc4f">$249.99</span><span
+                                                class="text-sm text-green-600"
+                                                data-testid="text-product-stock-a15d8f34-d3f4-47d8-932d-1b21e508cc4f">En
+                                                stock</span></div>
+                                    </div>
+                                    <div class="flex items-center p-6 pt-0"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full"
+                                            data-testid="button-add-cart-a15d8f34-d3f4-47d8-932d-1b21e508cc4f">Agregar
+                                            al Carrito</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="servicios">
+                            <h4 class="text-2xl font-semibold text-foreground mb-8" data-testid="text-services-title">
+                                Servicios</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+                                    data-testid="card-service-27a92e58-1fcc-4b2c-a03b-db905afb916f">
+                                    <div class="aspect-video overflow-hidden"><img
+                                            src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400"
+                                            alt="Consultoría IT" class="w-full h-full object-cover"
+                                            data-testid="img-service-27a92e58-1fcc-4b2c-a03b-db905afb916f"></div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="text-2xl font-semibold leading-none tracking-tight"
+                                            data-testid="text-service-name-27a92e58-1fcc-4b2c-a03b-db905afb916f">
+                                            Consultoría IT</div>
+                                        <div class="text-sm text-muted-foreground"
+                                            data-testid="text-service-description-27a92e58-1fcc-4b2c-a03b-db905afb916f">
+                                            Consultoría personalizada para optimizar tu infraestructura tecnológica
+                                        </div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <div class="flex items-center justify-between"><span
+                                                class="text-2xl font-bold text-primary"
+                                                data-testid="text-service-price-27a92e58-1fcc-4b2c-a03b-db905afb916f">$150.00<span
+                                                    class="text-sm text-muted-foreground ml-1">/60min</span></span><span
+                                                class="text-sm text-green-600"
+                                                data-testid="text-service-availability-27a92e58-1fcc-4b2c-a03b-db905afb916f">Disponible</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center p-6 pt-0"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2 w-full"
+                                            data-testid="button-book-service-27a92e58-1fcc-4b2c-a03b-db905afb916f">Reservar
+                                            Cita</button></div>
+                                </div>
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+                                    data-testid="card-service-fb7140cf-7f62-4363-ba99-91a1ce98fe21">
+                                    <div class="aspect-video overflow-hidden"><img
+                                            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400"
+                                            alt="Desarrollo Web" class="w-full h-full object-cover"
+                                            data-testid="img-service-fb7140cf-7f62-4363-ba99-91a1ce98fe21"></div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="text-2xl font-semibold leading-none tracking-tight"
+                                            data-testid="text-service-name-fb7140cf-7f62-4363-ba99-91a1ce98fe21">
+                                            Desarrollo Web</div>
+                                        <div class="text-sm text-muted-foreground"
+                                            data-testid="text-service-description-fb7140cf-7f62-4363-ba99-91a1ce98fe21">
+                                            Desarrollo de aplicaciones web personalizadas y responsive</div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <div class="flex items-center justify-between"><span
+                                                class="text-2xl font-bold text-primary"
+                                                data-testid="text-service-price-fb7140cf-7f62-4363-ba99-91a1ce98fe21">$200.00<span
+                                                    class="text-sm text-muted-foreground ml-1">/90min</span></span><span
+                                                class="text-sm text-green-600"
+                                                data-testid="text-service-availability-fb7140cf-7f62-4363-ba99-91a1ce98fe21">Disponible</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center p-6 pt-0"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2 w-full"
+                                            data-testid="button-book-service-fb7140cf-7f62-4363-ba99-91a1ce98fe21">Reservar
+                                            Cita</button></div>
+                                </div>
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+                                    data-testid="card-service-cf95b897-4b56-4ead-80e3-e711076b2b41">
+                                    <div class="aspect-video overflow-hidden"><img
+                                            src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400"
+                                            alt="Soporte Técnico" class="w-full h-full object-cover"
+                                            data-testid="img-service-cf95b897-4b56-4ead-80e3-e711076b2b41"></div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="text-2xl font-semibold leading-none tracking-tight"
+                                            data-testid="text-service-name-cf95b897-4b56-4ead-80e3-e711076b2b41">Soporte
+                                            Técnico</div>
+                                        <div class="text-sm text-muted-foreground"
+                                            data-testid="text-service-description-cf95b897-4b56-4ead-80e3-e711076b2b41">
+                                            Soporte técnico especializado para resolver problemas informáticos</div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <div class="flex items-center justify-between"><span
+                                                class="text-2xl font-bold text-primary"
+                                                data-testid="text-service-price-cf95b897-4b56-4ead-80e3-e711076b2b41">$80.00<span
+                                                    class="text-sm text-muted-foreground ml-1">/45min</span></span><span
+                                                class="text-sm text-green-600"
+                                                data-testid="text-service-availability-cf95b897-4b56-4ead-80e3-e711076b2b41">Disponible</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center p-6 pt-0"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2 w-full"
+                                            data-testid="button-book-service-cf95b897-4b56-4ead-80e3-e711076b2b41">Reservar
+                                            Cita</button></div>
+                                </div>
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+                                    data-testid="card-service-c24c1da8-603a-461b-a0a1-fffb72c24485">
+                                    <div class="aspect-video overflow-hidden"><img
+                                            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400"
+                                            alt="Capacitación Digital" class="w-full h-full object-cover"
+                                            data-testid="img-service-c24c1da8-603a-461b-a0a1-fffb72c24485"></div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="text-2xl font-semibold leading-none tracking-tight"
+                                            data-testid="text-service-name-c24c1da8-603a-461b-a0a1-fffb72c24485">
+                                            Capacitación Digital</div>
+                                        <div class="text-sm text-muted-foreground"
+                                            data-testid="text-service-description-c24c1da8-603a-461b-a0a1-fffb72c24485">
+                                            Capacitación en herramientas digitales para equipos de trabajo</div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <div class="flex items-center justify-between"><span
+                                                class="text-2xl font-bold text-primary"
+                                                data-testid="text-service-price-c24c1da8-603a-461b-a0a1-fffb72c24485">$120.00<span
+                                                    class="text-sm text-muted-foreground ml-1">/120min</span></span><span
+                                                class="text-sm text-green-600"
+                                                data-testid="text-service-availability-c24c1da8-603a-461b-a0a1-fffb72c24485">Disponible</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center p-6 pt-0"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2 w-full"
+                                            data-testid="button-book-service-c24c1da8-603a-461b-a0a1-fffb72c24485">Reservar
+                                            Cita</button></div>
+                                </div>
+                                <div class="rounded-lg border bg-card text-card-foreground shadow-sm overflow-hidden hover:shadow-lg transition-shadow"
+                                    data-testid="card-service-5ce4d6f3-848f-4828-b44e-8b4a33ae8d6b">
+                                    <div class="aspect-video overflow-hidden"><img
+                                            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=600&amp;h=400"
+                                            alt="Auditoría de Seguridad" class="w-full h-full object-cover"
+                                            data-testid="img-service-5ce4d6f3-848f-4828-b44e-8b4a33ae8d6b"></div>
+                                    <div class="flex flex-col space-y-1.5 p-6">
+                                        <div class="text-2xl font-semibold leading-none tracking-tight"
+                                            data-testid="text-service-name-5ce4d6f3-848f-4828-b44e-8b4a33ae8d6b">
+                                            Auditoría de Seguridad</div>
+                                        <div class="text-sm text-muted-foreground"
+                                            data-testid="text-service-description-5ce4d6f3-848f-4828-b44e-8b4a33ae8d6b">
+                                            Evaluación completa de la seguridad de tus sistemas informáticos</div>
+                                    </div>
+                                    <div class="p-6 pt-0">
+                                        <div class="flex items-center justify-between"><span
+                                                class="text-2xl font-bold text-primary"
+                                                data-testid="text-service-price-5ce4d6f3-848f-4828-b44e-8b4a33ae8d6b">$300.00<span
+                                                    class="text-sm text-muted-foreground ml-1">/180min</span></span><span
+                                                class="text-sm text-red-600"
+                                                data-testid="text-service-availability-5ce4d6f3-848f-4828-b44e-8b4a33ae8d6b">No
+                                                disponible</span></div>
+                                    </div>
+                                    <div class="flex items-center p-6 pt-0"><button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2 w-full"
+                                            disabled=""
+                                            data-testid="button-book-service-5ce4d6f3-848f-4828-b44e-8b4a33ae8d6b">No
+                                            Disponible</button></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="relative z-20 text-center text-white max-w-4xl mx-auto px-6">
-                        <h2 class="text-5xl md:text-6xl font-bold mb-6" data-testid="text-hero-title">Bienvenido a
-                            Nuestros
-                            Servicios</h2>
-                        <p class="text-xl md:text-2xl mb-8 opacity-90" data-testid="text-hero-subtitle">Descubre
-                            productos y
-                            servicios de calidad para tu negocio</p>
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center"><button
-                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-primary hover:bg-secondary/80 h-11 hover:bg-white  rounded-md px-8 hover:text-primary"
-                                data-testid="button-products">Ver Productos</button><button
-                                class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border bg-primary h-11 rounded-md px-8  hover:bg-white hover:text-primary"
-                                data-testid="button-appointment">Reservar Cita</button></div>
-                    </div><button
-                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:text-accent-foreground h-10 w-10 absolute left-4 top-1/2 transform -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 text-white"
-                        data-testid="button-prev-slide"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left w-6 h-6">
-                            <path d="m15 18-6-6 6-6"></path>
-                        </svg></button><button
-                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:text-accent-foreground h-10 w-10 absolute right-4 top-1/2 transform -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 text-white"
-                        data-testid="button-next-slide"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-6 h-6">
-                            <path d="m9 18 6-6-6-6"></path>
-                        </svg></button>
-                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30 flex space-x-2"><button
-                            class="w-3 h-3 rounded-full transition-colors bg-white"
-                            data-testid="button-slide-0"></button><button
-                            class="w-3 h-3 rounded-full transition-colors bg-white/50"
-                            data-testid="button-slide-1"></button><button
-                            class="w-3 h-3 rounded-full transition-colors bg-white/50"
-                            data-testid="button-slide-2"></button></div>
                 </section>
                 <!-- fin inicio -->
 
@@ -146,33 +434,45 @@
                             </p>
                         </div>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-testid="product-1">
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm"
+                                data-testid="product-1">
                                 <div class="p-6">
                                     <h3 class="text-xl font-semibold mb-2">Producto 1</h3>
                                     <p class="text-muted-foreground mb-4">Descripción del producto 1.</p>
                                     <div class="flex items-center justify-between">
                                         <span class="text-2xl font-bold text-primary">$25.00</span>
-                                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2" data-product-id="1" data-product-name="Producto 1" data-product-price="25.00">Agregar al Carrito</button>
+                                        <button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                                            data-product-id="1" data-product-name="Producto 1"
+                                            data-product-price="25.00">Agregar al Carrito</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-testid="product-2">
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm"
+                                data-testid="product-2">
                                 <div class="p-6">
                                     <h3 class="text-xl font-semibold mb-2">Producto 2</h3>
                                     <p class="text-muted-foreground mb-4">Descripción del producto 2.</p>
                                     <div class="flex items-center justify-between">
                                         <span class="text-2xl font-bold text-primary">$35.00</span>
-                                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2" data-product-id="2" data-product-name="Producto 2" data-product-price="35.00">Agregar al Carrito</button>
+                                        <button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                                            data-product-id="2" data-product-name="Producto 2"
+                                            data-product-price="35.00">Agregar al Carrito</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-testid="product-3">
+                            <div class="rounded-lg border bg-card text-card-foreground shadow-sm"
+                                data-testid="product-3">
                                 <div class="p-6">
                                     <h3 class="text-xl font-semibold mb-2">Producto 3</h3>
                                     <p class="text-muted-foreground mb-4">Descripción del producto 3.</p>
                                     <div class="flex items-center justify-between">
                                         <span class="text-2xl font-bold text-primary">$45.00</span>
-                                        <button class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2" data-product-id="3" data-product-name="Producto 3" data-product-price="45.00">Agregar al Carrito</button>
+                                        <button
+                                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+                                            data-product-id="3" data-product-name="Producto 3"
+                                            data-product-price="45.00">Agregar al Carrito</button>
                                     </div>
                                 </div>
                             </div>
@@ -525,10 +825,10 @@
                 data-testid="text-cart-title">Carrito de Compras<button
                     class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-10 w-10"
                     data-testid="button-close-cart">
-                        <path d="M18 6 6 18"></path>
-                        <path d="m6 6 12 12"></path>
-                   </button>
-                </h2>
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                </button>
+            </h2>
         </div>
         <div class="flex-1 overflow-y-auto">
             <div class="text-center py-8" data-testid="text-cart-empty">
@@ -537,11 +837,11 @@
         </div>
         <button type="button"
             class="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-                
-                <path d="M18 6 6 18"></path>
-                <path d="m6 6 12 12"></path>
-                x
-           <span class="sr-only">Close</span>
+
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+            x
+            <span class="sr-only">Close</span>
         </button>
     </div>
 
