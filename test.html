@@ -1,163 +1,128 @@
-<Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden" data-testid="modal-admin">
-        <DialogHeader>
-          <DialogTitle className="flex items-center justify-between" data-testid="text-admin-title">
-            Panel Administrativo
-            <Button variant="ghost" size="icon" onClick={onClose} data-testid="button-close-admin">
-              <X className="w-6 h-6" />
-            </Button>
-          </DialogTitle>
-        </DialogHeader>
-        
-        <Tabs defaultValue="sync" className="h-full">
-          <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="sync" className="flex items-center gap-2" data-testid="tab-sync">
-              <RefreshCw className="w-4 h-4" />
-              Sincronización
-            </TabsTrigger>
-            <TabsTrigger value="products" className="flex items-center gap-2" data-testid="tab-products">
-              <Package className="w-4 h-4" />
-              Productos
-            </TabsTrigger>
-            <TabsTrigger value="services" className="flex items-center gap-2" data-testid="tab-services">
-              <Settings className="w-4 h-4" />
-              Servicios
-            </TabsTrigger>
-            <TabsTrigger value="content" className="flex items-center gap-2" data-testid="tab-content">
-              <FileText className="w-4 h-4" />
-              Contenido
-            </TabsTrigger>
-          </TabsList>
-          
-          <div className="overflow-y-auto h-96 mt-4">
-            <TabsContent value="sync" className="space-y-6">
-              <Card className="bg-accent/50">
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <Database className="w-5 h-5" />
-                    Estado de Sincronización
-                  </CardTitle>
-                  <CardDescription>
-                    Gestiona la sincronización entre la API y los archivos JSON locales
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex items-center space-x-2 mb-4">
-                    <Badge variant="outline" className="bg-green-100 text-green-800">
-                      Conectado
-                    </Badge>
-                    <span className="text-sm text-muted-foreground" data-testid="text-last-sync">
-                      Última sincronización: {syncStatus.lastSync}
-                    </span>
-                  </div>
-                  <Button 
-                    onClick={handleSync}
-                    disabled={syncMutation.isPending}
-                    className="w-full md:w-auto"
-                    data-testid="button-sync-now"
-                  >
-                    {syncMutation.isPending ? (
-                      <>
-                        <RefreshCw className="w-4 h-4 mr-2 animate-spin" />
-                        Sincronizando...
-                      </>
-                    ) : (
-                      <>
-                        <RefreshCw className="w-4 h-4 mr-2" />
-                        Sincronizar Ahora
-                      </>
-                    )}
-                  </Button>
-                </CardContent>
-              </Card>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <Card>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-sm font-medium">Productos</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold text-primary" data-testid="text-products-count">
-                      {syncStatus.products}
-                    </div>
-                    <p className="text-xs text-muted-foreground">Actualizados</p>
-                  </CardContent>
-                </Card>
-                
-                <Card>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-sm font-medium">Servicios</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold text-primary" data-testid="text-services-count">
-                      {syncStatus.services}
-                    </div>
-                    <p className="text-xs text-muted-foreground">Actualizados</p>
-                  </CardContent>
-                </Card>
-                
-                <Card>
-                  <CardHeader className="pb-2">
-                    <CardTitle className="text-sm font-medium">Usuarios</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="text-2xl font-bold text-primary" data-testid="text-users-count">
-                      {syncStatus.users}
-                    </div>
-                    <p className="text-xs text-muted-foreground">Registrados</p>
-                  </CardContent>
-                </Card>
-              </div>
-            </TabsContent>
-            
-            <TabsContent value="products" className="space-y-4">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Gestión de Productos</CardTitle>
-                  <CardDescription>
-                    Administra los productos disponibles en la tienda
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Funcionalidad de gestión de productos próximamente disponible.
-                  </p>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            
-            <TabsContent value="services" className="space-y-4">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Gestión de Servicios</CardTitle>
-                  <CardDescription>
-                    Administra los servicios ofrecidos y sus horarios
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Funcionalidad de gestión de servicios próximamente disponible.
-                  </p>
-                </CardContent>
-              </Card>
-            </TabsContent>
-            
-            <TabsContent value="content" className="space-y-4">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Gestión de Contenido</CardTitle>
-                  <CardDescription>
-                    Edita el contenido del sitio web (textos, imágenes, etc.)
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Funcionalidad de gestión de contenido próximamente disponible.
-                  </p>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </div>
-        </Tabs>
-      </DialogContent>
-    </Dialog>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Collection Renderer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .post, .doctor, .info-item, .config-item, .slider-item {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Collection Renderer</h1>
+    
+    <!-- header-top section -->
+    <div class="section">
+        <h2>Header Top (config/header)</h2>
+        <div data-collection data-area="config" data-elemento="header" data-template="#template-header">
+        </div>
+    </div>
+
+    <!-- about section -->
+    <div class="section">
+        <h2>About (info/about)</h2>
+        <div data-collection data-area="info" data-elemento="about" data-template="#template-about">
+        </div>
+    </div>
+
+    <!-- services/series section -->
+    <div class="section">
+        <h2>Servicios/Features (info/servicios)</h2>
+        <div data-collection data-area="info" data-elemento="servicios" data-template="#template-servicios">
+        </div>
+    </div>
+
+    <!-- doctores section -->
+    <div class="section">
+        <h2>Doctores (doctores)</h2>
+        <div data-collection data-area="doctores" data-elemento="doctores" data-template="#template-doctor">
+        </div>
+    </div>
+
+    <!-- sliders section -->
+    <div class="section">
+        <h2>Sliders (sliders/hero)</h2>
+        <div data-collection data-area="sliders" data-elemento="hero" data-template="#template-slider">
+        </div>
+    </div>
+
+    <!-- Templates -->
+    <template id="template-header">
+        <div class="config-item">
+            <h3 data-field="descripcion"></h3>
+            <p><strong>Correo:</strong> <span data-field="correo"></span></p>
+            <p><strong>Dirección:</strong> <span data-field="direccion"></span></p>
+            <p><strong>Horario:</strong> <span data-field="horario"></span></p>
+        </div>
+    </template>
+
+    <template id="template-about">
+        <div class="info-item">
+            <h3 data-field="title"></h3>
+            <p data-field="description"></p>
+        </div>
+    </template>
+
+    <template id="template-servicios">
+        <div class="info-item">
+            <h3 data-field="title"></h3>
+            <p data-field="description"></p>
+        </div>
+    </template>
+
+    <template id="template-doctor">
+        <div class="doctor">
+            <h3 data-field="name"></h3>
+            <p><strong>Especialidad:</strong> <span data-field="specialty"></span></p>
+            <p><strong>Email:</strong> <span data-field="email"></span></p>
+            <p><strong>Teléfono:</strong> <span data-field="phone"></span></p>
+            <p><strong>Experiencia:</strong> <span data-field="experience"></span></p>
+        </div>
+    </template>
+
+    <template id="template-slider">
+        <div class="slider-item">
+            <h3 data-field="title"></h3>
+            <p data-field="description"></p>
+            <p><strong>Subtítulo:</strong> <span data-field="sub-title"></span></p>
+        </div>
+    </template>
+
+    <template id="post-template">
+        <article class="post">
+            <h2 data-field="title"></h2>
+            <p data-field="description"></p>
+            <span data-field="date"></span>
+        </article>
+    </template>
+
+    <script src="assset/CRUD/admin.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const collections = new CollectionManager();
+            collections.iniciar();
+        });
+    </script>
+</body>
+</html>
