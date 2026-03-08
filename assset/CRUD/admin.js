@@ -7,8 +7,8 @@ class CollectionManager {
     const elementos = document.querySelectorAll("[data-collection]");
 
     elementos.forEach((el) => {
-      const area = el.dataset.area;
-      const elemento = el.dataset.elemento;
+      const area = el.dataset.area; //nombre coleccion
+      const elemento = el.dataset.elemento; // descripcion
       const templateId = el.dataset.template;
 
       const instancia = new CollectionRenderer(area, elemento, el, templateId);
