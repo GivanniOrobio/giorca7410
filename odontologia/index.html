@@ -98,59 +98,6 @@
         </div>
     </template>
 
-    <template id="template-about-item">
-
-        <div class="about-left">
-            <div class="about-img">
-                <img class="about-img-1" data-src="imagen" alt="">
-            </div>
-            <div class="about-left-content">
-                <div class="about-left-icon">
-                    <i data-class="icono"></i>
-                </div>
-                <div class="about-left-info">
-                    <h5 data-field="h5">Need Any Help ?</h5>
-                    <p>Llama ahora : <a data-href="telefono" data-field="telefono">+2 123 654 789</a></p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="about-right">
-            <div class="site-heading mb-3">
-                <span data-field="titulo" class="site-title-tagline">About Us</span>
-                <h2 class="site-title" data-field="h2">We provide best <span>dental care solution</span> for you</h2>
-            </div>
-            <p data-field="p_1" class="about-text">
-                There are many variations of passages of Lorem Ipsum available, but the majority have
-                suffered alteration in some form, by injected humour, or randomised words which don't
-                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
-                need to be sure there isn't anything embarrassing hidden in the middle of text.
-            </p>
-            <div class="about-list-wrapper">
-                <ul class="about-list list-unstyled">
-                    <li>
-                        <div class="icon"><span data-class="icono_2"></span></div>
-                        <div class="text">
-                            <h5 data-field="h5_2">Free Checkup</h5>
-                            <p data-field="p_2">Take a look at our round up of the best shows.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="icon"><span data-class="icono_3"></span></div>
-                        <div class="text">
-                            <h5 data-field="h5_3">Highly Professional Staff</h5>
-                            <p data-field="p_3">Take a look at our round up of the best shows.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <a href="about.html" class="theme-btn mt-4">Discover More <i class="far fa-arrow-right"></i></a>
-        </div>
-
-    </template>
-
-
     <!-- header area -->
     <header class="header">
 
@@ -292,43 +239,90 @@
 
 
         <!-- about area -->
-        <div class="about-area pb-120">
+        <div class="about-area py-120">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6" data-collection data-area="info" data-elemento="about-info"
-                        data-template="#template-about-item"></div>
-
+                    <div class="col-lg-6">
+                        <div class="about-left">
+                            <div class="about-img">
+                                <img class="about-img-1" src="assets/img/about/01.jpg" alt="">
                             </div>
+                            <div class="about-left-content">
+                                <div class="about-left-icon">
+                                    <i class="far fa-headset"></i>
+                                </div>
+                                <div class="about-left-info">
+                                    <h5>Need Any Help ?</h5>
+                                    <p>Call Now : <a href="tel:+2123654789">+2 123 654 789</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-right">
+                            <div class="site-heading mb-3">
+                                <span class="site-title-tagline">About Us</span>
+                                <h2 class="site-title">We provide best <span>dental care solution</span> for you</h2>
+                            </div>
+                            <p class="about-text">
+                                There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour, or randomised words which don't
+                                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                                need to be sure there isn't anything embarrassing hidden in the middle of text.
+                            </p>
+                            <div class="about-list-wrapper">
+                                <ul class="about-list list-unstyled">
+                                    <li>
+                                        <div class="icon"><span class="flaticon-broken-tooth"></span></div>
+                                        <div class="text">
+                                            <h5>Free Checkup</h5>
+                                            <p>Take a look at our round up of the best shows.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><span class="flaticon-fake-tooth"></span></div>
+                                        <div class="text">
+                                            <h5>Highly Professional Staff</h5>
+                                            <p>Take a look at our round up of the best shows.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="about.html" class="theme-btn mt-4">Discover More <i
+                                    class="far fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- about area end -->
 
 
         <template id="service-area">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-item">
-                            <div class="service-img">
+            <div class="col-md-6 col-lg-4">
+                <div class="service-item">
+                    <div class="service-img">
                         <img data-src="servicioimg" alt="">
-                            </div>
-                            <div class="service-content">
-                                <div class="service-content-info">
-                                    <div class="service-icon">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-content-info">
+                            <div class="service-icon">
                                 <i data-class="icono"></i>
-                                    </div>
-                                    <h3 class="service-title">
-                                        <a href="#">Dental Implants</a>
-                                    </h3>
-                                </div>
-                                <p class="service-text">
-                                    There are many variations of passages available but the majority have suffered
-                                    alteration injected.
-                                </p>
-                                <div class="service-arrow">
-                                    <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                                </div>
                             </div>
+                            <h3 class="service-title">
+                                <a href="#">Dental Implants</a>
+                            </h3>
+                        </div>
+                        <p class="service-text">
+                            There are many variations of passages available but the majority have suffered
+                            alteration injected.
+                        </p>
+                        <div class="service-arrow">
+                            <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
                         </div>
                     </div>
+                </div>
+            </div>
         </template>
 
         <!-- service area -->
@@ -339,9 +333,9 @@
                         <div class="site-heading text-center">
                             <span class="site-title-tagline">Services</span>
                             <h2 class="site-title">What We <span>Offer</span></h2>
-                            </div>
-                                    </div>
-                                </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row" data-collection data-area="sector_area" data-elemento="services"
                     data-template="#service-area">
 
@@ -833,7 +827,7 @@
                                 randomised words which don't look even.</p>
                             <p>It is a long established fact that a reader will be distracted by the readable content of
                                 a page when looking at its layout. </p>
-                            <a href="#" class="theme-btn mt-5">Ask Your Question <i class="far fa-arrow-right"></i></a>    
+                            <a href="#" class="theme-btn mt-5">Ask Your Question <i class="far fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -865,7 +859,7 @@
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                       We denounce with righteous indignation and dislike men who
+                                        We denounce with righteous indignation and dislike men who
                                         are so beguiled and demoralized by the charms of pleasure of the moment, so
                                         blinded by desire.
                                     </div>
@@ -882,7 +876,7 @@
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                       We denounce with righteous indignation and dislike men who
+                                        We denounce with righteous indignation and dislike men who
                                         are so beguiled and demoralized by the charms of pleasure of the moment, so
                                         blinded by desire.
                                     </div>
@@ -994,8 +988,8 @@
         <!-- blog-area end -->
 
 
-        
-        <!-- partner area -->
+
+        <!-- partner area - ->
         <div class="partner-area pt-70 pb-70">
             <div class="container">
                 <div class="partner-wrapper partner-slider owl-carousel owl-theme">
@@ -1009,7 +1003,7 @@
                 </div>
             </div>
         </div>
-        <!-- partner area end -->
+        <!- - partner area end -->
 
 
     </main>
