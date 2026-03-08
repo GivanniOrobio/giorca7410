@@ -83,6 +83,74 @@
         </div>
     </template>
 
+    <template id="feature-item">
+        <div class="col-md-6 col-lg-3">
+            <div class="feature-item active">
+                <div class="feature-icon">
+                    <i data-class="icono"></i>
+                </div>
+                <div class="feature-content">
+                    <h5 data-field="h5">Qualified Dentist</h5>
+                    <p data-field="p">It is a long established fact that a reader will be distract by the readable
+                        content.</p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="template-about-item">
+
+        <div class="about-left">
+            <div class="about-img">
+                <img class="about-img-1" data-src="imagen" alt="">
+            </div>
+            <div class="about-left-content">
+                <div class="about-left-icon">
+                    <i data-class="icono"></i>
+                </div>
+                <div class="about-left-info">
+                    <h5 data-field="h5">Need Any Help ?</h5>
+                    <p>Llama ahora : <a data-href="telefono" data-field="telefono">+2 123 654 789</a></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about-right">
+            <div class="site-heading mb-3">
+                <span data-field="titulo" class="site-title-tagline">About Us</span>
+                <h2 class="site-title" data-field="h2">We provide best <span>dental care solution</span> for you</h2>
+            </div>
+            <p data-field="p_1" class="about-text">
+                There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour, or randomised words which don't
+                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
+                need to be sure there isn't anything embarrassing hidden in the middle of text.
+            </p>
+            <div class="about-list-wrapper">
+                <ul class="about-list list-unstyled">
+                    <li>
+                        <div class="icon"><span data-class="icono_2"></span></div>
+                        <div class="text">
+                            <h5 data-field="h5_2">Free Checkup</h5>
+                            <p data-field="p_2">Take a look at our round up of the best shows.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon"><span data-class="icono_3"></span></div>
+                        <div class="text">
+                            <h5 data-field="h5_3">Highly Professional Staff</h5>
+                            <p data-field="p_3">Take a look at our round up of the best shows.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <a href="about.html" class="theme-btn mt-4">Discover More <i class="far fa-arrow-right"></i></a>
+        </div>
+
+    </template>
+
+
     <!-- header area -->
     <header class="header">
 
@@ -209,73 +277,6 @@
         </div>
         <!-- hero slider end -->
 
-        <template id="feature-item">
-            <div class="col-md-6 col-lg-3">
-                <div class="feature-item active">
-                    <div class="feature-icon">
-                        <i data-class="icono"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h5 data-field="h5">Qualified Dentist</h5>
-                        <p data-field="p">It is a long established fact that a reader will be distract by the readable
-                            content.</p>
-                    </div>
-                </div>
-            </div>
-        </template>
-
-        <template id="template-about-item">
-            <div class="col-lg-6">
-                <div class="about-left">
-                    <div class="about-img">
-                        <img class="about-img-1" src="assets/img/about/01.jpg" alt="">
-                    </div>
-                    <div class="about-left-content">
-                        <div class="about-left-icon">
-                            <i class="far fa-headset"></i>
-                        </div>
-                        <div class="about-left-info">
-                            <h5>Need Any Help ?</h5>
-                            <p>Call Now : <a href="tel:+2123654789">+2 123 654 789</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="about-right">
-                    <div class="site-heading mb-3">
-                        <span class="site-title-tagline">About Us</span>
-                        <h2 class="site-title">We provide best <span>dental care solution</span> for you</h2>
-                    </div>
-                    <p class="about-text">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have
-                        suffered alteration in some form, by injected humour, or randomised words which don't
-                        look even slightly believable. If you are going to use a passage of Lorem Ipsum, you
-                        need to be sure there isn't anything embarrassing hidden in the middle of text.
-                    </p>
-                    <div class="about-list-wrapper">
-                        <ul class="about-list list-unstyled">
-                            <li>
-                                <div class="icon"><span class="flaticon-broken-tooth"></span></div>
-                                <div class="text">
-                                    <h5>Free Checkup</h5>
-                                    <p>Take a look at our round up of the best shows.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon"><span class="flaticon-fake-tooth"></span></div>
-                                <div class="text">
-                                    <h5>Highly Professional Staff</h5>
-                                    <p>Take a look at our round up of the best shows.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="about.html" class="theme-btn mt-4">Discover More <i class="far fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </template>
-
         <!-- feature-area -->
         <div class="feature-area py-120">
             <div class="container">
@@ -292,13 +293,42 @@
         <!-- about area -->
         <div class="about-area pb-120">
             <div class="container">
-                <div class="row align-items-center" data-collection data-area="info" data-elemento="about-item" data-template="template-about-item">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-collection data-area="info" data-elemento="about-info"
+                        data-template="#template-about-item"></div>
 
                 </div>
             </div>
         </div>
         <!-- about area end -->
 
+
+        <template id="service-area">
+            <div class="col-md-6 col-lg-4">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img data-src="servicioimg" alt="">
+                    </div>
+                    <div class="service-content">
+                        <div class="service-content-info">
+                            <div class="service-icon">
+                                <i data-class="icono"></i>
+                            </div>
+                            <h3 class="service-title">
+                                <a href="#">Dental Implants</a>
+                            </h3>
+                        </div>
+                        <p class="service-text">
+                            There are many variations of passages available but the majority have suffered
+                            alteration injected.
+                        </p>
+                        <div class="service-arrow">
+                            <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
 
         <!-- service area -->
         <div class="service-area bg py-120">
@@ -311,151 +341,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="assets/img/service/01.jpg" alt="">
-                            </div>
-                            <div class="service-content">
-                                <div class="service-content-info">
-                                    <div class="service-icon">
-                                        <i class="flaticon-holed-tooth"></i>
-                                    </div>
-                                    <h3 class="service-title">
-                                        <a href="#">Dental Implants</a>
-                                    </h3>
-                                </div>
-                                <p class="service-text">
-                                    There are many variations of passages available but the majority have suffered
-                                    alteration injected.
-                                </p>
-                                <div class="service-arrow">
-                                    <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="assets/img/service/02.jpg" alt="">
-                            </div>
-                            <div class="service-content">
-                                <div class="service-content-info">
-                                    <div class="service-icon">
-                                        <i class="flaticon-mouth-prop"></i>
-                                    </div>
-                                    <h3 class="service-title">
-                                        <a href="#">Cosmetic Dentistry</a>
-                                    </h3>
-                                </div>
-                                <p class="service-text">
-                                    There are many variations of passages available but the majority have suffered
-                                    alteration injected.
-                                </p>
-                                <div class="service-arrow">
-                                    <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="assets/img/service/03.jpg" alt="">
-                            </div>
-                            <div class="service-content">
-                                <div class="service-content-info">
-                                    <div class="service-icon">
-                                        <i class="flaticon-inner-tooth"></i>
-                                    </div>
-                                    <h3 class="service-title">
-                                        <a href="#">Teeth Whitening</a>
-                                    </h3>
-                                </div>
-                                <p class="service-text">
-                                    There are many variations of passages available but the majority have suffered
-                                    alteration injected.
-                                </p>
-                                <div class="service-arrow">
-                                    <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="assets/img/service/04.jpg" alt="">
-                            </div>
-                            <div class="service-content">
-                                <div class="service-content-info">
-                                    <div class="service-icon">
-                                        <i class="flaticon-shiny-tooth"></i>
-                                    </div>
-                                    <h3 class="service-title">
-                                        <a href="#">Teeth Cleaning</a>
-                                    </h3>
-                                </div>
-                                <p class="service-text">
-                                    There are many variations of passages available but the majority have suffered
-                                    alteration injected.
-                                </p>
-                                <div class="service-arrow">
-                                    <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="assets/img/service/05.jpg" alt="">
-                            </div>
-                            <div class="service-content">
-                                <div class="service-content-info">
-                                    <div class="service-icon">
-                                        <i class="flaticon-decayed-tooth"></i>
-                                    </div>
-                                    <h3 class="service-title">
-                                        <a href="#">Orthodontics</a>
-                                    </h3>
-                                </div>
-                                <p class="service-text">
-                                    There are many variations of passages available but the majority have suffered
-                                    alteration injected.
-                                </p>
-                                <div class="service-arrow">
-                                    <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="service-item">
-                            <div class="service-img">
-                                <img src="assets/img/service/06.jpg" alt="">
-                            </div>
-                            <div class="service-content">
-                                <div class="service-content-info">
-                                    <div class="service-icon">
-                                        <i class="flaticon-teeth-protection"></i>
-                                    </div>
-                                    <h3 class="service-title">
-                                        <a href="#">Dental Root Canal</a>
-                                    </h3>
-                                </div>
-                                <p class="service-text">
-                                    There are many variations of passages available but the majority have suffered
-                                    alteration injected.
-                                </p>
-                                <div class="service-arrow">
-                                    <a href="#" class="theme-btn">Read More <span class="far fa-arrow-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="row" data-collection data-area="sector_area" data-elemento="services" data-template="#service-area">
+
                 </div>
             </div>
         </div>
